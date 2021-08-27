@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Grid - lazyYT jQuery plugin demo</title>
+        <meta name="description" content="">
+
+        <link rel="stylesheet" href="../lazyYT.css">
+
+        <style>
+            body {
+                background-color: #252525;
+            }
+            h1 {
+                text-align: center;
+                font-size: 2em;
+                color: #fff;
+            }
+            .container {
+                margin: 100px auto;
+                width: 90%;
+                max-width: 1140px;
+            }
+            .grid .item {
+              display: inline-block;
+              width: 32%;
+              margin-left: 1%;
+              margin-bottom: 1%;
+            }
+            #forkongithub a{background:#F4D35E;color:#000;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#EE964B;color:#000;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#083D77;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:fixed;display:block;top:0;left:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;left:-60px;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}
+        </style>
+
+    </head>
+    <body>
+      <span id="forkongithub"><a href="https://github.com/Daugilas/lazyYT">Fork me on GitHub</a></span>
+
+        <div class="container">
+            <h1>Video grid</h1>
+            
+            <div class="grid">
+              
+              <div class="item odd">
+                <div class="js-lazyYT" data-youtube-id="_oEA18Y8gM0">Loading video...</div>
+              </div>
+              <div class="item even">
+                <div class="js-lazyYT" data-youtube-id="tuMgJrFoAFY" data-display-duration="false" title="Ten Walls - Walking With Elephants">Loading video...</div>
+              </div>
+              <div class="item odd">
+                <div class="js-lazyYT" data-youtube-id="HLEAA_tIpbY" data-title="Dragdis - drag&drop anything anywhere!"></div>
+              </div>
+              
+              <div class="item even">
+                <div class="js-lazyYT" data-youtube-id="zZ7LORizfZg"></div>
+              </div>
+              <div class="item odd">
+                <div class="js-lazyYT" data-youtube-id="QK8mJJJvaes" data-display-title="false"></div>
+              </div>
+              <div class="item even">
+                <div class="js-lazyYT" data-youtube-id="156iOcnJdbw" data-parameters="rel=0"></div>
+              </div>
+              
+              <div class="item odd">
+                <div class="js-lazyYT" data-youtube-id="dZREfVaIkl8"></div>
+              </div>
+              <div class="item even">
+                <div class="js-lazyYT" data-youtube-id="gBXQ9eQpijc"></div>
+              </div>
+              <div class="item odd">
+                <div class="js-lazyYT" data-youtube-id="RPO4tbV4UHk"></div>
+              </div>
+              
+              <div class="item even">
+                <div class="js-lazyYT" data-youtube-id="04cF1m6Jxu8"></div>
+              </div>
+              <div class="item odd">
+                <div class="js-lazyYT" data-youtube-id="gQEyezu7G20" data-display-duration="true"></div>
+              </div>
+              <div class="item even">
+                <div class="js-lazyYT" data-youtube-id="nwN6dPNXklg"></div>
+              </div>
+              
+              <div style="color: #eee; text-align: center;">Just take a look how fast they all load!</div>
+              
+            </div>
+            
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="../lazyYT.js"></script>
+        <script>
+        
+        var your_fav_function = function(args) {
+          console.log(this);
+        };
+        
+        $( document ).ready(function() {
+            $('.item.odd .js-lazyYT').lazyYT('AIzaSyCawA87g_pgTbSNPhiWAemy-mFKszJGl4M');
+            
+            // Pass some parameters
+            $('.item.even .js-lazyYT').lazyYT('AIzaSyCawA87g_pgTbSNPhiWAemy-mFKszJGl4M', {
+              loading_text: 'It is loading!...',
+              display_title: true,
+              display_duration: true,
+              youtube_parameters: 'rel=1',
+              default_ratio: '16:9',
+              callback: your_fav_function
+            });
+        });
+        </script>
+
+    </body>
+</html>

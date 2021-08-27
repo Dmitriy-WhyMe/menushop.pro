@@ -151,5 +151,20 @@
 			else d.documentElement.firstChild.appendChild(s);
 		})(document, window, 'MeTalk');
 		//End Me-Talk
+
+		$('.js-lazyYT').lazyYT({
+		  youtube_parameters: 'rel=0', // youtube URL parameters: https://developers.google.com/youtube/player_parameters#Parameters
+		  loading_text: 'Loading...', // displayed instead of video title while its loading
+		  display_title: true, // display title in video's info bar
+		  default_ratio: '16:9',
+		  display_duration: false, // display video duration in bottom right
+		  callback: function() {
+		    console.log(this);
+		  },
+		  
+		  // Advanced settings
+		  video_loaded_class: 'lazyYT-video-loaded', // adds this class after video loads into container
+		  container_class: 'lazyYT-container' // default CSS depends on this class
+		});
 	});
 })(jQuery);
