@@ -13,7 +13,7 @@
   </header>
 	<?php
 		if($_SERVER['REQUEST_METHOD'] == 'POST') {
-			$to = "support@menushop.ru";
+			$to = "madesisudaidi@gmail.com";
 			$message = "Имя заказчика: ".$_POST['name']."<br>";
 			$message .= "Номер телефона: ".$_POST['tell']."<br>";
 			$message .= "Email: ".$_POST['email']."<br>";
