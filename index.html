@@ -72,7 +72,7 @@
     <a class="btn-top" href="#top">Наверх</a>
     <div class="white-popup mfp-hide" id="text-popup_1">
       <h2>МЫ скоро СВЯЖЕМСЯ В ВАМИ ПО ВАШЕМУ ЗАКАЗУ</h2>
-      <form action="" id="pop_form">
+      <form method="post" id="ajax_form" action="">
         <input type="text" placeholder="Имя" required name="name">
         <input type="text" placeholder="Email" required name="email">
         <input type="text" placeholder="Tel." required name="tell">
@@ -81,6 +81,7 @@
           <label for="checkbox_1">Согласие на обработку персональных данных</label>
         </div>
         <button class="btn-mail" id="pop_6" href="#text-popup_2" type="submit">Подтвердить заказ</button>
+        <div id="result_form"></div> 
       </form>
     </div>
     <div class="white-popup mfp-hide" id="text-popup_2">

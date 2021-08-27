@@ -124,6 +124,32 @@
 	        });
 	    });
 
+	    /* Article FructCode.com */
+		$( document ).ready(function() {
+		    $("#pop_6").click(
+				function(){
+					sendAjaxForm('result_form', 'ajax_form', 'action_ajax_form.php');
+					return false; 
+				}
+			);
+		});
+		 
+		function sendAjaxForm(result_form, ajax_form, url) {
+		    $.ajax({
+		        url:     ./mail/check.php, //url страницы (action_ajax_form.php)
+		        type:     "POST", //метод отправки
+		        dataType: "html", //формат данных
+		        data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
+		        success: function(response) { //Данные отправлены успешно
+		        	result = $.parseJSON(response);
+		        	$('#result_form').html('Имя: '+result.name+'<br>Телефон: '+result.tell+'<br>Почта: '+result.email);
+		    	},
+		    	error: function(response) { // Данные не отправлены
+		            $('#result_form').html('Ошибка. Данные не отправлены.');
+		    	}
+		 	});
+		}
+
 		var ZCallbackWidgetLinkId  = '27ce4a8b3bfd08265bd6767ebd53386c';
 		var ZCallbackWidgetDomain  = 'my.zadarma.com';
 		(function(){
