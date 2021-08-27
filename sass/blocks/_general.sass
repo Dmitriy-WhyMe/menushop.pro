@@ -1,0 +1,1077 @@
+// main page elements
+body
+	font-size: 14px
+	color: #000000
+	font-family: 'Cera Pro'
+	font-style: normal
+	font-weight: 300
+	background: white
+	overflow-x: hidden
+	// +scrollbar(10px, auto, $yellow, $gray2, $dark, null)
+
+.page-container
+	max-width: 1920px
+	width: 100%
+	margin: 0 auto
+	overflow: hidden
+
+.container
+	max-width: 1200px
+	width: 100%
+	padding: 0
+	margin: 0 auto
+	+mq($max-width: 1200px)
+		padding: 0 35px
+		max-width: 100%
+	+mq($max-width: 575px)
+		padding: 0 10px
+.mobile
+	display: none
+.desk_1
+	display: none
+.ipad
+	display: none
+.ipad_1
+	display: none
+.flex
+	display: flex
+.us .slide .dop__block
+	display: flex
+.dops-mobile
+	display: none
+.mob, .mob_1
+	display: none
+.mobile-slider
+	display: none
+.btn-absol
+	display: none
+.btn
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100%
+	background: $blue
+	box-shadow: 0px 0px 2px rgba(8, 135, 248, 0.1), 0px 2px 10px rgba(8, 135, 248, 0.2)
+	border-radius: 5px
+	text-transform: uppercase
+	color: white
+	font-family: 'Cera Pro'
+	font-weight: bold
+	font-size: 14px
+	&:hover
+		background: white
+		color: $blue
+	&:focus
+		background: #E91C24
+		color: white
+	&:active
+		background: #E91C24
+		color: white
+.btn-absol
+	display: none
+.btn-top
+	width: 70px
+	height: 70px
+	background: $blue
+	color: white
+	border-radius: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	font-weight: bold
+	font-family: 'BebasNeue'
+	font-size: 18px
+	position: fixed
+	bottom: 50px
+	right: 50px
+	z-index: 100000
+.btn-mail
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100%
+	background: inherit
+	border: 1px solid #FFFFFF
+	box-shadow: 0px 0px 2px rgba(8, 135, 248, 0.1), 0px 2px 10px rgba(8, 135, 248, 0.2)
+	border-radius: 5px
+	text-transform: uppercase
+	color: white
+	font-family: 'Cera Pro'
+	font-weight: bold
+	font-size: 14px
+	&:hover
+		background: white
+		color: $blue
+	&:focus
+		background: #E91C24
+		color: white
+	&:active
+		background: #E91C24
+		color: white
+//Start section Pop-up
+.mfp-close-btn-in .mfp-close
+	color: white
+.mfp-close
+	font-size: 32px
+	width: 33px
+	height: 33px
+	background: $blue
+	border-radius: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	right: -10px
+	top: -10px
+	padding: 0px
+.mfp-close:active
+	top: -10px
+button.mfp-arrow, button.mfp-close
+	background: $blue
+	display: flex
+	align-items: center
+	justify-content: center
+	opacity: 1
+	right: -10px
+	top: -10px
+	&:hover
+		background: #D9D9DB
+	&:focus
+		background: #E91C24
+	&:active
+		background: #E91C24
+#text-popup_2
+	position: relative
+	margin: 0 auto
+	background: #0887F8
+	max-width: 417px
+	height: 123px
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	h2
+		font-size: 24px
+		line-height: 45px
+		color: white
+		font-family: 'BebasNeue'
+		font-weight: normal
+#text-popup_1
+	position: relative
+	margin: 0 auto
+	background: #0887F8
+	max-width: 488px
+	width: 100%
+	padding-top: 37px
+	padding-bottom: 49px
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1), 0px 8px 40px rgba(0, 0, 0, 0.2)
+	border-radius: 5px
+	h2
+		font-size: 24px
+		line-height: 45px
+		color: white
+		text-align: center
+		font-family: 'BebasNeue'
+		margin-bottom: 11px
+		font-weight: normal
+	form
+		margin: 0 auto
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 100%
+		max-width: 390px
+		justify-content: center
+		input
+			width: 100%
+			background: rgba(255, 255, 255, 0.3)
+			border-radius: 5px
+			height: 45px
+			font-size: 16px
+			line-height: 30px
+			color: white
+			padding-left: 20px
+			margin-bottom: 12px
+			&:last-child
+				margin-bottom: 0px
+		input::-webkit-input-placeholder
+			color: white
+		input::-moz-placeholder
+			color: white
+		input::-moz-placeholder
+			color: white
+		input::-ms-input-placeholder
+			color: white
+		.round
+			margin-top: 16px
+			align-items: center
+			display: flex
+			width: 100%
+			input
+				border: none
+				max-width: 15px
+				height: 15px
+				width: 100%
+				background-color: rgba(255, 255, 255, 0.3)
+				box-shadow: 0px 0px 2px rgba(0, 0, 0, .1) inset
+				border-radius: 2px
+				margin: 0px
+				outline: none
+				outline-offset: 0
+			label
+				color: white
+				font-size: 16px
+				line-height: 30px
+				opacity: 0.8
+				margin-left: 10px
+				cursor: pointer	
+		a
+			height: 48px
+			margin-top: 27px
+			cursor: pointer
+		
+
+//Finish section Pop-up
+
+//Start section slicks
+.slick-one
+	max-width: 775px
+.slick-dots--slick-one
+	position: absolute
+	bottom: -91px
+	left: 0
+	display: flex
+	align-items: center
+	gap: 21px
+	.index-slider
+		font-weight: bold
+		font-size: 18px
+		line-height: 30px
+		color: #03297A
+	.all-slider
+		font-weight: bold
+		font-size: 18px
+		line-height: 30px
+		color: $blue
+	.drob
+		width: 30px
+		height: 2px
+		background: $blue
+.slick-arrow--slick-one
+	display: flex
+	align-items: center
+	gap: 27px
+	position: absolute
+	top: 0
+	right: -190px
+	.arrow_prev--1
+		cursor: pointer
+		&:hover
+			svg
+				path
+					fill: #D9D9DB
+		&:active
+			svg
+				path
+					fill: #E91C24
+		&:focus
+			svg
+				path
+					fill: #E91C24
+	.arrow_next--1
+		cursor: pointer
+		&:hover
+			svg
+				path
+					fill: #D9D9DB
+		&:active
+			svg
+				path
+					fill: #E91C24
+		&:focus
+			svg
+				path
+					fill: #E91C24
+	.cirle	
+		width: 5px
+		height: 5px
+		border-radius: 100%
+		background: #03297A
+
+.slick-two
+	max-width: 538px
+.slick-dots--slick-two
+	position: absolute
+	bottom: 0px
+	right: 0
+	display: flex
+	align-items: center
+	gap: 21px
+	.index-slider__1
+		font-weight: bold
+		font-size: 18px
+		line-height: 30px
+		color: #03297A
+	.all-slider__1
+		font-weight: bold
+		font-size: 18px
+		line-height: 30px
+		color: $blue
+	.drob
+		width: 30px
+		height: 2px
+		background: $blue
+.slick-arrow--slick-two
+	display: flex
+	align-items: center
+	gap: 27px
+	position: absolute
+	top: 0
+	left: -190px
+	.arrow_prev--2
+		cursor: pointer
+		&:hover
+			svg
+				path
+					fill: #D9D9DB
+		&:active
+			svg
+				path
+					fill: #E91C24
+		&:focus
+			svg
+				path
+					fill: #E91C24
+	.arrow_next--2
+		cursor: pointer
+		&:hover
+			svg
+				path
+					fill: #D9D9DB
+		&:active
+			svg
+				path
+					fill: #E91C24
+		&:focus
+			svg
+				path
+					fill: #E91C24
+	.cirle	
+		width: 5px
+		height: 5px
+		border-radius: 100%
+		background: #03297A
+.slick-arrow--slick-three
+	display: none
+	align-items: center
+	gap: 27px
+	position: absolute
+	bottom: 5px
+	.arrow_prev--3
+		cursor: pointer
+		&:hover
+			svg
+				path
+					fill: #D9D9DB
+		&:active
+			svg
+				path
+					fill: #E91C24
+		&:focus
+			svg
+				path
+					fill: #E91C24
+	.arrow_next--3
+		cursor: pointer
+		&:hover
+			svg
+				path
+					fill: #D9D9DB
+		&:active
+			svg
+				path
+					fill: #E91C24
+		&:focus
+			svg
+				path
+					fill: #E91C24
+	.cirle	
+		width: 5px
+		height: 5px
+		border-radius: 100%
+		background: #03297A
+//Finish section slicks
+
+//Start section main
+.main
+	padding-top: 146px
+	padding-bottom: 24px
+	position: relative
+	.absol
+		position: absolute
+		z-index: -1
+		top: 0
+		left: 0
+		right: 0
+		width: 100%
+		height: 676px
+	.dop-block--absol
+		position: absolute
+		right: 90px
+		bottom: -120px
+		max-width: 306px
+		width: 100%
+		background: $blue
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1), 0px 8px 40px rgba(0, 0, 0, 0.2)
+		border-radius: 5px
+		display: flex
+		gap: 13px
+		flex-direction: column
+		padding-top: 13px
+		padding-left: 24px
+		padding-bottom: 9px
+		p
+			font-weight: bold
+			font-size: 42px
+			color: white
+			line-height: 120%
+			font-family: 'BebasNeue'
+			display: flex
+			span
+				display: block
+				margin-left: 5px
+				font-weight: 500
+				font-size: 16px
+				font-weight: normal
+				color: white
+				font-family: 'Cera Pro'
+				line-height: 125%
+	.dop-title
+		color: white
+		background: $blue
+		height: 43px
+		position: absolute
+		font-weight: bold
+		display: flex
+		align-items: center
+		padding-right: 24px
+		left: 0
+		top: 94px
+		font-size: 24px
+		line-height: 100%
+		padding-left: 18.5%
+	.flex
+		justify-content: space-between
+	.main-block 
+		margin-top: 124px
+		p
+			font-size: 18px
+			line-height: 30px
+			opacity: 0.7
+			color: white
+			margin-bottom: 16px
+		.flex
+			gap: 30px
+			justify-content: inherit
+			.flex__item
+				max-width: 195px
+				width: 100%
+				height: 70px
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					right: 0
+					width: 2px
+					height: 70px
+					background: white
+					opacity: 0.7
+					top: 0
+				&:last-child
+					&:after
+						width: 0px
+					a
+						left: 60px
+				h3
+					font-weight: bold
+					font-size: 20px
+					line-height: 30px
+					font-family: 'BebasNeue'
+					opacity: 0.7
+					color: white
+					max-width: 165px
+				a
+					position: absolute
+					color: $blue
+					bottom: 15px
+					left: 50px
+	.flex__item-one
+		h1
+			font-weight: bold
+			font-size: 64px
+			line-height: 120%
+			font-family: 'BebasNeue'
+			max-width: 683px
+			color: white
+		p
+			font-size: 20px
+			line-height: 30px
+			opacity: 0.7
+			display: flex
+			align-items: center
+			gap: 11px
+			color: white
+			font-weight: 300
+			span
+				opacity: 0.7
+				width: 2px
+				background: #FFFFFF
+				height: 29px
+	.flex__item-two
+		margin-top: 10px
+		max-width: 306px
+		background: linear-gradient(90.22deg, #141618 0.67%, rgba(20, 22, 24, 0.21) 99.77%)
+		padding-top: 29px
+		padding-left: 31px
+		padding-right: 31px
+		padding-bottom: 38px
+		h4
+			font-size: 20px
+			line-height: 140%
+			text-align: center
+			font-family: 'BebasNeue'
+			font-weight: normal
+			margin-bottom: 7px
+			color: white
+		p
+			text-align: center
+			margin-bottom: 29px
+			color: white
+			font-size: 14px
+			line-height: 120%
+			font-weight: 300
+		form
+			input
+				width: 100%
+				background: rgba(255, 255, 255, 0.05)
+				border-radius: 5px
+				height: 45px
+				padding-left: 20px
+				font-size: 16px
+				line-height: 30px
+				color: white
+				opacity: 0.8
+				margin-bottom: 24px
+			button
+				height: 40px
+				cursor: pointer
+
+//Finish section main
+
+//Start section people
+
+.people 
+	padding-right: 121px
+	display: flex
+	img
+		max-width: 630px
+		width: 100%
+	.people__block
+		margin-left: 77px
+		margin-top: 100px
+		h2
+			font-size: 36px
+			line-height: 100%
+			margin-bottom: 8px
+			font-weight: normal
+		p
+			font-size: 18px
+			line-height: 120%
+			color: #242424
+		.people__wrap 
+			display: flex
+			flex-wrap: wrap
+			gap: 16px
+			margin-top: 42px
+			p
+				max-width: 296px
+				display: flex
+				svg
+					margin-right: 10px
+					display: block
+					min-width: 24px
+					min-height: 24px
+			a
+				margin-top: 40px
+				margin-left: 50px
+				max-width: 220px
+				height: 49px
+
+//Finish section people
+
+//Start section price
+
+.price
+	background: #242424
+	padding-top: 98px
+	padding-bottom: 78px
+	h2
+		font-family: 'BebasNeue'
+		font-weight: bold
+		font-size: 48px
+		line-height: 45px
+		color: white
+		margin-bottom: 64px
+	.price-block
+		position: relative
+		display: flex
+		.price-block__item
+			margin-right: 107px
+			margin-top: 72px
+			max-width: 201px
+			width: 100%
+			p
+				font-size: 18px
+				line-height: 30px
+				margin-bottom: 15px
+				color: white
+		.flex 
+			padding-top: 16px
+			gap: 24px
+			width: 100%
+			.flex__item
+				display: flex
+				flex-direction: column
+				align-items: flex-end
+				width: 100%
+				&:nth-child(2n)
+					span
+						background: $blue
+				span
+					text-transform: uppercase
+					font-weight: bold
+					font-size: 13px
+					line-height: 21px
+					background: #EEEEEE
+					height: 21px
+					text-align: center
+					padding-left: 8px
+					padding-right: 8px
+					border-radius: 2px
+					margin-bottom: 29px
+				p
+					max-width: 282px
+					width: 100%
+					justify-content: center
+					display: flex
+					align-items: center
+					font-size: 18px
+					line-height: 30px
+					font-weight: normal
+					color: white
+					height: 45px
+					&:nth-child(2n)
+						background: rgba(255, 255, 255, 0.05)
+						border-radius: 2px 
+				a
+					margin-top: 24px
+					max-width: 220px
+					height: 40px
+					margin-right: 28px
+//Finish section price
+
+//Start section us
+
+.us
+	position: relative
+	padding-top: 99px
+	padding-bottom: 195px
+	.container
+		position: relative
+	.us-absol__block
+		position: absolute
+		right: 0
+		top: 0
+		background: $blue
+		opacity: 0.2
+		max-width: 324px
+		width: 100%
+		height: 100%
+		background-image: url(../img/1440/wave_2.png)
+		background-repeat: no-repeat
+		background-size: cover
+	.absol
+		position: absolute
+		right: 0
+		top: 166px
+	h2
+		font-family: 'BebasNeue'
+		afont-weight: bold
+		font-size: 48px
+		line-height: 45px
+		margin-bottom: 8px
+	p
+		font-weight: normal
+		font-size: 20px
+		line-height: 30px
+		margin-bottom: 42px
+		a
+			font-weight: normal
+			font-size: 20px
+			line-height: 30px
+			color: $blue
+	.slide
+		display: flex
+		align-items: center
+		.block__text
+			margin-right: 34px
+			h5
+				font-weight: bold
+				font-size: 18px
+				line-height: 30px
+			p
+				font-size: 16px
+				line-height: 30px
+				opacity: 0.8
+		p
+			font-size: 18px
+			line-height: 140%
+			opacity: 0.7
+			max-width: 486px
+			width: 100%
+		img
+			max-width: 75px
+			max-height: 75px
+			border-radius: 100%
+			margin-right: 20px
+
+//Finish section us
+//Start section videoreview
+
+.videoreview
+	padding-top: 100px
+	padding-bottom: 100px
+	background-image: url(../img/1440/BGVIDEO.png)
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	.container
+		position: relative
+	.videoreview-absol__block
+		position: absolute
+		left: 0
+		top: 0
+		background: $blue
+		opacity: 0.2
+		max-width: 324px
+		width: 100%
+		height: 100%
+		background-image: url(../img/1440/wave_3.png)
+		background-repeat: no-repeat
+		background-size: cover
+	.absol
+		position: absolute
+		left: 0
+		top: 0px
+	.container
+		display: flex
+		justify-content: flex-end
+		.slick-two 
+			margin-right: 50px
+			margin-top: 75px
+		.videoreview__item
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			h2
+				font-family: 'BebasNeue'
+				afont-weight: bold
+				font-size: 48px
+				line-height: 45px
+				margin-bottom: 8px
+				text-align: right
+			p
+				font-weight: normal
+				font-size: 20px
+				line-height: 30px
+				text-align: right
+			a
+				font-weight: normal
+				font-size: 20px
+				line-height: 30px
+				color: $blue
+				text-align: right
+
+//Finish section videoreview
+//Start section acknowledgments
+
+.acknowledgments
+	background: #242424
+	padding-top: 100px
+	padding-bottom: 96px
+	position: relative
+	.acknowledgments-absol__block
+		position: absolute
+		right: 0
+		top: 0
+		background: $blue
+		opacity: 0.2
+		max-width: 324px
+		width: 100%
+		height: 100%
+		background-image: url(../img/1440/wave.png)
+		background-repeat: no-repeat
+		background-size: cover
+	.absol
+		position: absolute
+		right: 0
+		bottom: 131px
+	h2
+		font-family: 'BebasNeue'
+		font-weight: bold
+		font-size: 48px
+		line-height: 45px
+		color: white
+	.acknowledgments-block
+		margin-top: 42px
+		margin-left: 55px
+		display: flex
+		.acknowledgments-block__item 
+			padding-top: 26px
+			padding-right: 25px
+			padding-left: 25px
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				width: 1px
+				height: 100%
+				right: 0
+				background: #505055
+			&:last-child
+				&:after
+					width: 0px
+			img
+				margin-bottom: 10px
+				max-width: 126px
+				width: 100%
+				height: 184px
+			h5
+				font-size: 18px
+				line-height: 30px
+				letter-spacing: 2px
+				color: white
+				font-family: 'BebasNeue'
+			.sity
+				font-size: 18px
+				line-height: 120%
+				color: $blue
+				text-align: center
+
+//Finish section acknowledgments
+
+//Start section causes
+
+.causes
+	position: relative
+	padding-top: 100px
+	padding-bottom: 128px
+	.causes-absol__block
+		position: absolute
+		left: 0
+		top: 0
+		background: #0887F8
+		opacity: 0.2
+		max-width: 324px
+		width: 100%
+		height: 100%
+		background-image: url(../img/1440/wave_1.png)
+		background-repeat: no-repeat
+		background-size: cover
+	.absol
+		position: absolute
+		left: 0
+		bottom: 150px
+	.container
+		display: flex
+		justify-content: flex-end
+		flex-direction: column
+		align-items: flex-end
+	h2
+		font-weight: bold
+		font-size: 48px
+		line-height: 45px
+		font-family: 'BebasNeue'
+		margin-bottom: 67px
+	.causes-wrap 
+		display: flex
+		flex-wrap: wrap
+		gap: 44px
+		max-width: 608px
+		width: 100%
+		.causes-wrap__item 
+			max-width: 282px
+			width: 100%
+			h3
+				font-weight: bold
+				font-size: 18px
+				line-height: 30px
+				padding-left: 8px
+				height: 45px
+				display: flex
+				align-items: center
+				background: $blue
+				color: white
+				font-family: 'BebasNeue'
+				margin-bottom: 7px
+			p
+				font-size: 16px
+				line-height: 140%
+				color: #000000
+
+//Finish section causes
+
+//Start section working
+
+.working
+	position: relative
+	padding-top: 100px
+	padding-bottom: 94px
+	background-image: url(../img/1440/beautiful-blue-denim-indigo-fabric-texture.png)
+	background-repeat: no-repeat
+	background-size: cover
+	.absol
+		position: absolute
+		top: -250px
+		right: 0
+	h2
+		font-family: 'BebasNeue'
+		font-weight: bold
+		font-size: 48px
+		line-height: 45px
+		margin-bottom: 64px
+	.flex 
+		gap: 24px
+		.flex__item 
+			max-width: 280px
+			width: 100%
+		.number
+			margin-bottom: 12px
+			color: $blue
+			font-weight: bold
+			font-size: 18px
+			line-height: 30px
+			border-bottom: 1px solid $blue
+			width: 100%
+			text-align: left
+		h4
+			font-weight: bold
+			font-size: 28px
+			line-height: 45px
+			font-family: 'BebasNeue'
+		p
+			margin-top: 5px
+			font-size: 18px
+			line-height: 140%
+
+
+//Finish section working
+
+//Start section questions
+
+.questions
+	padding-top: 100px
+	padding-bottom: 80px
+	position: relative
+	.absol
+		z-index: -1
+		width: 100%
+		height: auto
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+	.container
+		display: flex
+		justify-content: flex-end
+		flex-direction: column
+		align-items: flex-end
+		.questions-block 
+			max-width: 488px
+			width: 100%
+			background: black
+			border-radius: 2px
+			padding-left: 53px
+			padding-right: 45px
+			padding-bottom: 42px
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			h3
+				font-family: 'BebasNeue'
+				color: white
+				margin-top: 35px
+				margin-bottom: 13px
+				font-size: 24px
+				line-height: 45px
+				text-align: center
+			form
+				display: flex
+				flex-direction: column
+				align-items: center
+				width: 100%
+				justify-content: center
+				input
+					width: 100%
+					background: rgba(255, 255, 255, 0.05)
+					border-radius: 5px
+					height: 45px
+					font-size: 16px
+					line-height: 30px
+					color: white
+					opacity: 0.8
+					padding-left: 20px
+					margin-bottom: 12px
+				textarea
+					width: 100%
+					background: rgba(255, 255, 255, 0.05)
+					border-radius: 5px
+					height: 45px
+					font-size: 16px
+					line-height: 30px
+					color: white
+					opacity: 1
+					padding-left: 20px
+					height: 69px
+					resize: none
+				.round
+					margin-top: 16px
+					align-items: center
+					display: flex
+					width: 100%
+					input
+						border: none
+						max-width: 15px
+						height: 15px
+						width: 100%
+						background: rgba(255, 255, 255, 0.3)
+						border-radius: 2px
+						margin: 0px
+						outline: none
+						outline-offset: 0
+					label
+						color: white
+						font-size: 16px
+						line-height: 30px
+						opacity: 0.8
+						margin-left: 10px
+						cursor: pointer
+				button
+					height: 48px
+					margin-top: 24px
+					cursor: pointer
+//Finish section questions

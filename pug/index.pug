@@ -1,0 +1,334 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+			a.btn-top(href="#top") Наверх
+			.white-popup(class="mfp-hide" id="text-popup_1")
+				h2 МЫ скоро СВЯЖЕМСЯ В ВАМИ ПО ВАШЕМУ ЗАКАЗУ
+				form(action="" id="pop_form")
+					input(type="text" placeholder="Имя" required name="name")
+					input(type="text" placeholder="Email" required name="email")
+					input(type="text" placeholder="Tel." required name="tell")
+					<div class="round">
+						<input type="checkbox" id="checkbox_1" required/>
+						<label for="checkbox_1">Согласие на обработку персональных данных</label>
+					</div>
+					a.btn-mail(id="pop_6" href="#text-popup_2") Подтвердить заказ
+			.white-popup(class="mfp-hide" id="text-popup_2")
+				h2 СПАСИБО ЗА ВАШУ ЗАЯВКУ!
+			section.main
+				img.absol(class="desk" loading="lazy" src=img+"1440/BG_main_banner_1.png", alt="")
+				img.absol(class="desk_1" loading="lazy" src=img+"1280/BG main banner.png", alt="")
+				img.absol(class="ipad" loading="lazy" src=img+"1000/BG main banner.png", alt="")
+				img.absol(class="ipad_1" loading="lazy" src=img+"768/BG main banner.png", alt="")
+				img.absol(class="mob" loading="lazy" src=img+"410/BG main banner.png", alt="")
+				img.absol(class="mob_1" loading="lazy" src=img+"320/BG main banner.png", alt="")
+				.dop-block--absol 
+					p 6 лет<span>опыта в разработке<br>документации</span>
+					p 15 лет<span>в ресторанном<br>бизнесе</span>
+					p 35 000+<span>блюд<br>разработано</span>
+				a.btn(href="#text-popup_1" id="pop_7" class="btn-absol") Заказать карты
+				.dop-title Разрабатываем
+				.container 
+					.flex 
+						.flex__item-one
+							h1 Технологические и калькуляционные карты на блюда
+							p от 170 рублей за карту<span></span>срок от 1 дня
+						.flex__item-two
+							h4 Закажите карты сейчас !
+							p мы перезвоним в течении 45 минут !
+							form(action="" id="pop_form") 
+								input(type="text" placeholder="Tel." name="tell")
+								button.btn ЗАКАЗАТЬ РАЗРАБОТКУ
+					.main-block 
+						p Через 24 часа вы получите:
+						.flex 
+							.flex__item
+								h3 Технологическую карту
+								a(href="#") посмотреть
+							.flex__item
+								h3 Калькуляционную карту
+								a(href="#") посмотреть
+							.flex__item
+								h3 Акт проработки на блюдо
+								a(href="#") посмотреть
+			section.people 
+				img(class="desk" loading="lazy" src=img+"1440/image_andrey.png", alt="")
+				img(class="desk_1" loading="lazy" src=img+"1280/image andrey.png", alt="")
+				img(class="ipad" loading="lazy" src=img+"1000/image andrey.png", alt="")
+				img(class="ipad_1" loading="lazy" src=img+"768/image andrey.png", alt="")
+				img(class="mob" loading="lazy" src=img+"410/andrey.png", alt="")
+				img(class="mob_1" loading="lazy" src=img+"320/andrey.png", alt="")
+				.people__block
+					h2 Я, Андрей Готцев,
+					p технолог с 15-летним опытом работы в общепите, управляющий компании MenuShop, предлагаю:
+					.people__wrap 
+						p <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6363 7.25342C16.3082 6.92535 15.7783 6.92535 15.4502 7.25342L10.7059 11.9977L11.892 13.1838L16.6363 8.43109C16.956 8.11143 16.956 7.57307 16.6363 7.25342ZM20.203 7.24501L11.892 15.556L8.96464 12.637C8.63658 12.309 8.10663 12.309 7.77856 12.637C7.4505 12.9651 7.4505 13.4951 7.77856 13.8231L11.2947 17.3393C11.6228 17.6674 12.1528 17.6674 12.4808 17.3393L21.389 8.4395C21.7171 8.11143 21.7171 7.58148 21.389 7.25342H21.3806C21.061 6.91694 20.531 6.91694 20.203 7.24501ZM3.02583 13.8315L6.54201 17.3477C6.87008 17.6758 7.40003 17.6758 7.72809 17.3477L8.31693 16.7589L4.21191 12.637C3.88385 12.309 3.3539 12.309 3.02583 12.637C2.69777 12.9651 2.69777 13.5035 3.02583 13.8315Z" fill="#0887F8"/></svg> Разработать технологические и калькуляционные карты на блюда
+						p <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6363 7.25342C16.3082 6.92535 15.7783 6.92535 15.4502 7.25342L10.7059 11.9977L11.892 13.1838L16.6363 8.43109C16.956 8.11143 16.956 7.57307 16.6363 7.25342ZM20.203 7.24501L11.892 15.556L8.96464 12.637C8.63658 12.309 8.10663 12.309 7.77856 12.637C7.4505 12.9651 7.4505 13.4951 7.77856 13.8231L11.2947 17.3393C11.6228 17.6674 12.1528 17.6674 12.4808 17.3393L21.389 8.4395C21.7171 8.11143 21.7171 7.58148 21.389 7.25342H21.3806C21.061 6.91694 20.531 6.91694 20.203 7.24501ZM3.02583 13.8315L6.54201 17.3477C6.87008 17.6758 7.40003 17.6758 7.72809 17.3477L8.31693 16.7589L4.21191 12.637C3.88385 12.309 3.3539 12.309 3.02583 12.637C2.69777 12.9651 2.69777 13.5035 3.02583 13.8315Z" fill="#0887F8"/></svg> Приобрести пакет документов для проверок Роспотребнадзора
+						p <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6363 7.25342C16.3082 6.92535 15.7783 6.92535 15.4502 7.25342L10.7059 11.9977L11.892 13.1838L16.6363 8.43109C16.956 8.11143 16.956 7.57307 16.6363 7.25342ZM20.203 7.24501L11.892 15.556L8.96464 12.637C8.63658 12.309 8.10663 12.309 7.77856 12.637C7.4505 12.9651 7.4505 13.4951 7.77856 13.8231L11.2947 17.3393C11.6228 17.6674 12.1528 17.6674 12.4808 17.3393L21.389 8.4395C21.7171 8.11143 21.7171 7.58148 21.389 7.25342H21.3806C21.061 6.91694 20.531 6.91694 20.203 7.24501ZM3.02583 13.8315L6.54201 17.3477C6.87008 17.6758 7.40003 17.6758 7.72809 17.3477L8.31693 16.7589L4.21191 12.637C3.88385 12.309 3.3539 12.309 3.02583 12.637C2.69777 12.9651 2.69777 13.5035 3.02583 13.8315Z" fill="#0887F8"/></svg> Составить продающее меню для вашего заведения
+						p <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6363 7.25342C16.3082 6.92535 15.7783 6.92535 15.4502 7.25342L10.7059 11.9977L11.892 13.1838L16.6363 8.43109C16.956 8.11143 16.956 7.57307 16.6363 7.25342ZM20.203 7.24501L11.892 15.556L8.96464 12.637C8.63658 12.309 8.10663 12.309 7.77856 12.637C7.4505 12.9651 7.4505 13.4951 7.77856 13.8231L11.2947 17.3393C11.6228 17.6674 12.1528 17.6674 12.4808 17.3393L21.389 8.4395C21.7171 8.11143 21.7171 7.58148 21.389 7.25342H21.3806C21.061 6.91694 20.531 6.91694 20.203 7.24501ZM3.02583 13.8315L6.54201 17.3477C6.87008 17.6758 7.40003 17.6758 7.72809 17.3477L8.31693 16.7589L4.21191 12.637C3.88385 12.309 3.3539 12.309 3.02583 12.637C2.69777 12.9651 2.69777 13.5035 3.02583 13.8315Z" fill="#0887F8"/></svg> Изменить меню вашего ресторана, кафе или столовой удаленно
+						p <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6363 7.25342C16.3082 6.92535 15.7783 6.92535 15.4502 7.25342L10.7059 11.9977L11.892 13.1838L16.6363 8.43109C16.956 8.11143 16.956 7.57307 16.6363 7.25342ZM20.203 7.24501L11.892 15.556L8.96464 12.637C8.63658 12.309 8.10663 12.309 7.77856 12.637C7.4505 12.9651 7.4505 13.4951 7.77856 13.8231L11.2947 17.3393C11.6228 17.6674 12.1528 17.6674 12.4808 17.3393L21.389 8.4395C21.7171 8.11143 21.7171 7.58148 21.389 7.25342H21.3806C21.061 6.91694 20.531 6.91694 20.203 7.24501ZM3.02583 13.8315L6.54201 17.3477C6.87008 17.6758 7.40003 17.6758 7.72809 17.3477L8.31693 16.7589L4.21191 12.637C3.88385 12.309 3.3539 12.309 3.02583 12.637C2.69777 12.9651 2.69777 13.5035 3.02583 13.8315Z" fill="#0887F8"/></svg> Разработать и зарегистрировать ТУ или СТО на продукцию
+						p <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6363 7.25342C16.3082 6.92535 15.7783 6.92535 15.4502 7.25342L10.7059 11.9977L11.892 13.1838L16.6363 8.43109C16.956 8.11143 16.956 7.57307 16.6363 7.25342ZM20.203 7.24501L11.892 15.556L8.96464 12.637C8.63658 12.309 8.10663 12.309 7.77856 12.637C7.4505 12.9651 7.4505 13.4951 7.77856 13.8231L11.2947 17.3393C11.6228 17.6674 12.1528 17.6674 12.4808 17.3393L21.389 8.4395C21.7171 8.11143 21.7171 7.58148 21.389 7.25342H21.3806C21.061 6.91694 20.531 6.91694 20.203 7.24501ZM3.02583 13.8315L6.54201 17.3477C6.87008 17.6758 7.40003 17.6758 7.72809 17.3477L8.31693 16.7589L4.21191 12.637C3.88385 12.309 3.3539 12.309 3.02583 12.637C2.69777 12.9651 2.69777 13.5035 3.02583 13.8315Z" fill="#0887F8"/></svg> Оформить протокол испытаний на подтверждение сроков годности и протокол БЖУ
+						p <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6363 7.25342C16.3082 6.92535 15.7783 6.92535 15.4502 7.25342L10.7059 11.9977L11.892 13.1838L16.6363 8.43109C16.956 8.11143 16.956 7.57307 16.6363 7.25342ZM20.203 7.24501L11.892 15.556L8.96464 12.637C8.63658 12.309 8.10663 12.309 7.77856 12.637C7.4505 12.9651 7.4505 13.4951 7.77856 13.8231L11.2947 17.3393C11.6228 17.6674 12.1528 17.6674 12.4808 17.3393L21.389 8.4395C21.7171 8.11143 21.7171 7.58148 21.389 7.25342H21.3806C21.061 6.91694 20.531 6.91694 20.203 7.24501ZM3.02583 13.8315L6.54201 17.3477C6.87008 17.6758 7.40003 17.6758 7.72809 17.3477L8.31693 16.7589L4.21191 12.637C3.88385 12.309 3.3539 12.309 3.02583 12.637C2.69777 12.9651 2.69777 13.5035 3.02583 13.8315Z" fill="#0887F8"/></svg> Оформить декларацию ТР ТС (ЕАС) с внесением в реестр ФСА
+						p <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6363 7.25342C16.3082 6.92535 15.7783 6.92535 15.4502 7.25342L10.7059 11.9977L11.892 13.1838L16.6363 8.43109C16.956 8.11143 16.956 7.57307 16.6363 7.25342ZM20.203 7.24501L11.892 15.556L8.96464 12.637C8.63658 12.309 8.10663 12.309 7.77856 12.637C7.4505 12.9651 7.4505 13.4951 7.77856 13.8231L11.2947 17.3393C11.6228 17.6674 12.1528 17.6674 12.4808 17.3393L21.389 8.4395C21.7171 8.11143 21.7171 7.58148 21.389 7.25342H21.3806C21.061 6.91694 20.531 6.91694 20.203 7.24501ZM3.02583 13.8315L6.54201 17.3477C6.87008 17.6758 7.40003 17.6758 7.72809 17.3477L8.31693 16.7589L4.21191 12.637C3.88385 12.309 3.3539 12.309 3.02583 12.637C2.69777 12.9651 2.69777 13.5035 3.02583 13.8315Z" fill="#0887F8"/></svg> Оформить протокол испытаний на пищевую продукцию
+						p <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6363 7.25342C16.3082 6.92535 15.7783 6.92535 15.4502 7.25342L10.7059 11.9977L11.892 13.1838L16.6363 8.43109C16.956 8.11143 16.956 7.57307 16.6363 7.25342ZM20.203 7.24501L11.892 15.556L8.96464 12.637C8.63658 12.309 8.10663 12.309 7.77856 12.637C7.4505 12.9651 7.4505 13.4951 7.77856 13.8231L11.2947 17.3393C11.6228 17.6674 12.1528 17.6674 12.4808 17.3393L21.389 8.4395C21.7171 8.11143 21.7171 7.58148 21.389 7.25342H21.3806C21.061 6.91694 20.531 6.91694 20.203 7.24501ZM3.02583 13.8315L6.54201 17.3477C6.87008 17.6758 7.40003 17.6758 7.72809 17.3477L8.31693 16.7589L4.21191 12.637C3.88385 12.309 3.3539 12.309 3.02583 12.637C2.69777 12.9651 2.69777 13.5035 3.02583 13.8315Z" fill="#0887F8"/></svg> Разработать этикетки и зарегестрировать штрих-коды на продукцию
+						p <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6363 7.25342C16.3082 6.92535 15.7783 6.92535 15.4502 7.25342L10.7059 11.9977L11.892 13.1838L16.6363 8.43109C16.956 8.11143 16.956 7.57307 16.6363 7.25342ZM20.203 7.24501L11.892 15.556L8.96464 12.637C8.63658 12.309 8.10663 12.309 7.77856 12.637C7.4505 12.9651 7.4505 13.4951 7.77856 13.8231L11.2947 17.3393C11.6228 17.6674 12.1528 17.6674 12.4808 17.3393L21.389 8.4395C21.7171 8.11143 21.7171 7.58148 21.389 7.25342H21.3806C21.061 6.91694 20.531 6.91694 20.203 7.24501ZM3.02583 13.8315L6.54201 17.3477C6.87008 17.6758 7.40003 17.6758 7.72809 17.3477L8.31693 16.7589L4.21191 12.637C3.88385 12.309 3.3539 12.309 3.02583 12.637C2.69777 12.9651 2.69777 13.5035 3.02583 13.8315Z" fill="#0887F8"/></svg> Разработать меню для школ и ДОУ по нормам СанПиН 2.3/2.4.3590-20
+						p <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6363 7.25342C16.3082 6.92535 15.7783 6.92535 15.4502 7.25342L10.7059 11.9977L11.892 13.1838L16.6363 8.43109C16.956 8.11143 16.956 7.57307 16.6363 7.25342ZM20.203 7.24501L11.892 15.556L8.96464 12.637C8.63658 12.309 8.10663 12.309 7.77856 12.637C7.4505 12.9651 7.4505 13.4951 7.77856 13.8231L11.2947 17.3393C11.6228 17.6674 12.1528 17.6674 12.4808 17.3393L21.389 8.4395C21.7171 8.11143 21.7171 7.58148 21.389 7.25342H21.3806C21.061 6.91694 20.531 6.91694 20.203 7.24501ZM3.02583 13.8315L6.54201 17.3477C6.87008 17.6758 7.40003 17.6758 7.72809 17.3477L8.31693 16.7589L4.21191 12.637C3.88385 12.309 3.3539 12.309 3.02583 12.637C2.69777 12.9651 2.69777 13.5035 3.02583 13.8315Z" fill="#0887F8"/></svg> Оформить сертификат ХАССП ISO 22000 с внесением в реестр
+						a.btn(href="#text-popup_1" id="pop_2") позвоните нам
+			section.price(id="stoimost")
+				.container 
+					h2 Стоимость и сроки разработки карт
+					.price-block
+						.price-block__item
+							p Технологическая карта
+							p Калькуляционная карта
+							p Акт проработки
+							p Количество блюд
+							p Сроки
+							p Консультации
+						.flex
+							.flex__item 
+								span минимальный
+								p 210 руб/шт
+								p 210 руб/шт
+								p бесплатно
+								p 5-10
+								p 24 часа
+								p бесплатно
+								a.btn(href="#text-popup_1" id="pop_3") заказать
+							.flex__item 
+								span стандарт
+								p 190 руб/шт
+								p 190 руб/шт
+								p бесплатно
+								p 10-50
+								p 1-2 дня
+								p бесплатно
+								a.btn(href="#text-popup_1" id="pop_4") заказать
+							.flex__item 
+								span продвинутый
+								p 170 руб/шт
+								p 170 руб/шт
+								p бесплатно
+								p от 50 шт
+								p 3-5 дней
+								p бесплатно
+								a.btn(href="#text-popup_1" id="pop_5") заказать
+						.slick-three(class="mobile-slider")
+							.flex__item 
+								span минимальный
+								p 210 руб/шт
+								p 210 руб/шт
+								p бесплатно
+								p 5-10
+								p 24 часа
+								p бесплатно
+								a.btn(href="#text-popup_1" id="pop_8") заказать
+							.flex__item 
+								span стандарт
+								p 190 руб/шт
+								p 190 руб/шт
+								p бесплатно
+								p 10-50
+								p 1-2 дня
+								p бесплатно
+								a.btn(href="#text-popup_1" id="pop_9") заказать
+							.flex__item 
+								span продвинутый
+								p 170 руб/шт
+								p 170 руб/шт
+								p бесплатно
+								p от 50 шт
+								p 3-5 дней
+								p бесплатно
+								a.btn(href="#text-popup_1" id="pop_10") заказать
+						.slick-arrow--slick-three
+							.arrow_prev--3
+								<svg width="31" height="12" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.3999 1.4L5.9999 0L-9.72748e-05 6L5.9999 12L7.3999 10.6L3.7999 7H30.3999V5H3.7999L7.3999 1.4Z" fill="#0887F8"/></svg>
+							.cirle
+							.arrow_next--3
+								<svg width="31" height="12" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23 1.4L24.4 0L30.4 6L24.4 12L23 10.6L26.6 7H0V5H26.6L23 1.4Z" fill="#03297A"/></svg>
+			section.us(id="otziv")
+				.us-absol__block
+				img.absol(class="desk" loading="lazy" src=img+"1440/white-bread-sliced-bread-with-seeds-wheat-and-flour-on-table 1.png", alt="")
+				img.absol(class="desk_1" loading="lazy" src=img+"1280/white-bread-sliced-bread-with-seeds-wheat-and-flour-on-table 1.png", alt="")
+				img.absol(class="ipad" loading="lazy" src=img+"1000/white-bread-sliced-bread-with-seeds-wheat-and-flour-on-table 1.png", alt="")
+				img.absol(class="ipad_1" loading="lazy" src=img+"768/white-bread-sliced-bread-with-seeds-wheat-and-flour-on-table 1.png", alt="")
+				img.absol(class="mob" loading="lazy" src=img+"410/white-bread-sliced-bread-with-seeds-wheat-and-flour-on-table 1.png", alt="")
+				img.absol(class="mob_1" loading="lazy" src=img+"320/white-bread-sliced-bread-with-seeds-wheat-and-flour-on-table 1.png", alt="")
+				.container 
+					h2 О нас
+					p Больше отзывов на <a href="https://vk.com/club36985847" target="_blank">vk.com/club36985847</a> 
+					.slick-one
+						.slide
+							.dop__block
+								img(src=img+"1440/rews.png", alt="")
+								.block__text
+									h5 Марина Батова
+									p Таганрог
+							p Работаю с Андреем Готцевым уже не первый год. Все договорённости выполняются. Сроки изготовления карт минимальны. Андрей оперативно реагирует на пожелания заказчика, например замена ингредиентов, корректировка выхода блюд, и другие. Всё время находится в режиме диалога. С уважением, М.Батова Бриз, Бригантина, Таганрог
+						.slide
+							.dop__block
+								img(src=img+"1440/rews.png", alt="")
+								.block__text 
+									h5 Марина Батова
+									p Таганрог
+							p 2Работаю с Андреем Готцевым уже не первый год. Все договорённости выполняются. Сроки изготовления карт минимальны. Андрей оперативно реагирует на пожелания заказчика, например замена ингредиентов, корректировка выхода блюд, и другие. Всё время находится в режиме диалога. С уважением, М.Батова Бриз, Бригантина, Таганрог
+					.slick-dots--slick-one
+						span.index-slider 1
+						span.drob
+						span.all-slider 6
+					.slick-arrow--slick-one
+						.arrow_prev--1
+							<svg width="31" height="12" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.3999 1.4L5.9999 0L-9.72748e-05 6L5.9999 12L7.3999 10.6L3.7999 7H30.3999V5H3.7999L7.3999 1.4Z" fill="#0887F8"/></svg>
+						.cirle
+						.arrow_next--1
+							<svg width="31" height="12" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23 1.4L24.4 0L30.4 6L24.4 12L23 10.6L26.6 7H0V5H26.6L23 1.4Z" fill="#03297A"/></svg>
+			section.videoreview
+				.videoreview-absol__block
+				img.absol(class="desk" loading="lazy" src=img+"1440/image_video.png", alt="")
+				img.absol(class="desk_1" loading="lazy" src=img+"1280/image_video.png", alt="")
+				img.absol(class="ipad" loading="lazy" src=img+"1000/image_video.png", alt="")
+				img.absol(class="ipad_1" loading="lazy" src=img+"768/image_video.png", alt="")
+				img.absol(class="mob" loading="lazy" src=img+"410/image_video.png", alt="")
+				img.absol(class="mob_1" loading="lazy" src=img+"320/image_video.png", alt="")
+				.container
+					.slick-two 
+						.slide
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/48A3_96kIbA" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						.slide
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/B_Lbcrbjhgg" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						.slide
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Cw_WhTTFIEw" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					.videoreview__item
+						h2 Видеоотзывы
+						p Больше отзывов на
+						a(href="https://vk.com/club36985847" target="_blank") vk.com/club36985847
+					.slick-dots--slick-two
+						span.index-slider__1 1
+						span.drob
+						span.all-slider__1 6
+					.slick-arrow--slick-two
+						.arrow_prev--2
+							<svg width="31" height="12" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.3999 1.4L5.9999 0L-9.72748e-05 6L5.9999 12L7.3999 10.6L3.7999 7H30.3999V5H3.7999L7.3999 1.4Z" fill="#0887F8"/></svg>
+						.cirle
+						.arrow_next--2
+							<svg width="31" height="12" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23 1.4L24.4 0L30.4 6L24.4 12L23 10.6L26.6 7H0V5H26.6L23 1.4Z" fill="#03297A"/></svg>
+			section.acknowledgments
+				.acknowledgments-absol__block
+				img.absol(class="desk" loading="lazy" src=img+"1440/raw-set-beef-steaks-on-over-meat-butcher-knife-with-spices-dark-background-close-up-vertical-image-place-for-text 1.png", alt="")
+				img.absol(class="desk_1" loading="lazy" src=img+"1280/raw-set-beef-steaks-on-over-meat-butcher-knife-with-spices-dark-background-close-up-vertical-image-place-for-text 1.png", alt="")
+				img.absol(class="ipad" loading="lazy" src=img+"1000/raw-set-beef-steaks-on-over-meat-butcher-knife-with-spices-dark-background-close-up-vertical-image-place-for-text 1.png", alt="")
+				img.absol(class="ipad_1" loading="lazy" src=img+"768/raw-set-beef-steaks-on-over-meat-butcher-knife-with-spices-dark-background-close-up-vertical-image-place-for-text 1.png", alt="")
+				img.absol(class="mob" loading="lazy" src=img+"410/raw-set-beef-steaks-on-over-meat-butcher-knife-with-spices-dark-background-close-up-vertical-image-place-for-text 1.png", alt="")
+				img.absol(class="mob_1" loading="lazy" src=img+"320/raw-set-beef-steaks-on-over-meat-butcher-knife-with-spices-dark-background-close-up-vertical-image-place-for-text 1.png", alt="")
+				.container
+					h2 Благодарности
+					.acknowledgments-block 
+						.acknowledgments-block__item
+							a(href="#") 
+								img(src=img+"1440/Снимок 3.png", alt="")
+							h5 ООо “Санлайт”
+							.sity Дмитров
+						.acknowledgments-block__item 
+							a(href="#") 
+								img(src=img+"1440/Снимок 3_(1).png", alt="")
+							h5 Кафе-пекарня “чехия”
+							.sity Томск
+						.acknowledgments-block__item 
+							a(href="#") 
+								img(src=img+"1440/Снимок 3_(2).png", alt="")
+							h5 ООО “Брестнев и К”
+							.sity Москва
+						.acknowledgments-block__item 
+							a(href="#") 
+								img(src=img+"1440/Снимок 3_(3).png", alt="")
+							h5 Шпили & Вилли
+							.sity Новокузнецк
+			section.causes
+				.causes-absol__block
+				img.absol(class="desk" loading="lazy" src=img+"1440/top-view-of-the-fresh-salad-with-a-fried-egg 1.png", alt="")
+				img.absol(class="desk_1" loading="lazy" src=img+"1280/top-view-of-the-fresh-salad-with-a-fried-egg 1.png", alt="")
+				img.absol(class="ipad" loading="lazy" src=img+"1000/top-view-of-the-fresh-salad-with-a-fried-egg 1.png", alt="")
+				img.absol(class="ipad_1" loading="lazy" src=img+"768/top-view-of-the-fresh-salad-with-a-fried-egg 1.png", alt="")
+				img.absol(class="mob" loading="lazy" src=img+"410/top-view-of-the-fresh-salad-with-a-fried-egg 1.png", alt="")
+				img.absol(class="mob_1" loading="lazy" src=img+"320/top-view-of-the-fresh-salad-with-a-fried-egg 1.png", alt="")
+				.container
+					h2 6 причин разработки у нас
+					.causes-wrap 
+						.causes-wrap__item 
+							h3 Гарантия качества
+							p Разработанные нами карты соответствуют ГОСТ 31987-2012
+						.causes-wrap__item 
+							h3 Быстрые сроки
+							p Сроки изготовления от 1 до 5 дней, что в 2 раза быстрее чем у наших конкурентов
+						.causes-wrap__item 
+							h3 Выгодные цены
+							p Мы предлагаем самые низкие цены, потому что работаем без посредников
+						.causes-wrap__item 
+							h3 Гибкая система скидок
+							p Заказывайте больше - платите меньше !
+						.causes-wrap__item 
+							h3 Гарантия возврата денег
+							p Мы вернем Вам деньги при обоснованных претензиях к качеству
+						.causes-wrap__item 
+							h3 На связи 24 часа в сутки
+							p Мы всегда готовы ответить на все ваши вопросы
+			section.working(id="shema_raboti")
+				img.absol(class="desk" loading="lazy" src=img+"1440/IMAGE CIRCLE.png", alt="")
+				img.absol(class="desk_1" loading="lazy" src=img+"1280/IMAGE CIRCLE.png", alt="")
+				img.absol(class="ipad" loading="lazy" src=img+"1000/IMAGE CIRCLE.png", alt="")
+				img.absol(class="ipad_1" loading="lazy" src=img+"768/IMAGE CIRCLE.png", alt="")
+				img.absol(class="mob" loading="lazy" src=img+"410/IMAGE CIRCLE.png", alt="")
+				img.absol(class="mob_1" loading="lazy" src=img+"320/IMAGE CIRCLE.png", alt="")
+				.container
+					h2 Как мы работаем
+					.flex 
+						.flex__item 
+							.number 01
+							.flex__item--border
+								h4 Сейчас
+								p Вы оставляете заявку
+						.flex__item 
+							.number 02
+							.flex__item--border
+								h4 Через 45 минут
+								p Мы связываемся с вами и уточняем список блюд
+						.flex__item 
+							.number 03
+							.flex__item--border
+								h4 Через 1 час
+								p Мы выставляем счет и начинаем разработку
+						.flex__item 
+							.number 04
+							.flex__item--border
+								h4 Через 24 часа
+								p Вы получаете готовые карты на указанную вами почту!
+			section.questions
+				img.absol(class="desk" loading="lazy" src=img+"1440/BG_CONTACT.png", alt="")
+				img.absol(class="desk_1" loading="lazy" src=img+"1280/BG CONTACT.png", alt="")
+				img.absol(class="ipad" loading="lazy" src=img+"1000/BG CONTACT.png", alt="")
+				img.absol(class="ipad_1" loading="lazy" src=img+"768/BG CONTACT.png", alt="")
+				img.absol(class="mob" loading="lazy" src=img+"410/BG CONTACT.png", alt="")
+				img.absol(class="mob_1" loading="lazy" src=img+"320/BG CONTACT.png", alt="")
+				.container
+					.questions-block 
+						h3 Остались вопросы ?
+						form(action="" id="pop_form") 
+							input(type="text" placeholder="Имя" name="name")
+							input(type="text" placeholder="Email" required name="email")
+							input(type="text" placeholder="Tel." name="tell")
+							<textarea rows="4" cols="50" placeholder="Ваш вопрос" required name="que"></textarea>
+							<div class="round">
+								<input type="checkbox" id="checkbox_2" required/>
+								<label for="checkbox_2">Согласие на обработку персональных данных</label>
+							</div>
+							button.btn задать вопрос
+		include blocks/footer.pug
+		include blocks/scripts.pug
