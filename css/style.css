@@ -146,6 +146,12 @@ footer .flex .social a{
 .mfp-wrap{
     z-index: 999999;
 }
+@media (max-width: 1440px){
+    .questions {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
 @media (max-width: 1024px){
     .questions {
         padding-top: 55px;
