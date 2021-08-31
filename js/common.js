@@ -1,1 +1,242 @@
-!function(i){i(document).ready(function(){i("#pop_1").magnificPopup({type:"inline"}),i("#pop_2").magnificPopup({type:"inline"}),i("#pop_3").magnificPopup({type:"inline"}),i("#pop_4").magnificPopup({type:"inline"}),i("#pop_5").magnificPopup({type:"inline"}),i("#pop_6").magnificPopup({type:"inline"}),i("#pop_7").magnificPopup({type:"inline"}),i("#pop_8").magnificPopup({type:"inline"}),i("#pop_9").magnificPopup({type:"inline"}),i("#pop_10").magnificPopup({type:"inline"}),i("#pop_12").magnificPopup({type:"inline"}),i(".test-popup-link-1").magnificPopup({type:"image"}),i(".test-popup-link-2").magnificPopup({type:"image"}),i(".test-popup-link-3").magnificPopup({type:"image"}),i(".test-popup-link-4").magnificPopup({type:"image"}),i("#test-popup-img-1").magnificPopup({type:"inline"}),i(".test-popup-img-2").magnificPopup({type:"image"}),i(".test-popup-img-3").magnificPopup({type:"image"}),i(function(){i("a[href^='#shema_raboti']").click(function(){var t=i(this).attr("href");return i("html, body").animate({scrollTop:i(t).offset().top+"px"}),!1}),i("a[href^='#stoimost']").click(function(){var t=i(this).attr("href");return i("html, body").animate({scrollTop:i(t).offset().top+"px"}),!1}),i("a[href^='#otziv']").click(function(){var t=i(this).attr("href");return i("html, body").animate({scrollTop:i(t).offset().top+"px"}),!1}),i("a[href^='#contact']").click(function(){var t=i(this).attr("href");return i("html, body").animate({scrollTop:i(t).offset().top+"px"}),!1}),i("a[href^='#services']").click(function(){var t=i(this).attr("href");return i("html, body").animate({scrollTop:i(t).offset().top+"px"}),!1}),i("a[href^='#top']").click(function(){var t=i(this).attr("href");return i("html, body").animate({scrollTop:i(t).offset().top+"px"}),!1})}),i(".slick-one").slick({dots:!1,arrows:!0,slidesToScroll:1,slidesToShow:1,infinite:!0,autoplay:!0,autoplaySpeed:1e4,prevArrow:i(".arrow_prev--1"),nextArrow:i(".arrow_next--1")}),i(".slick-one").on("afterChange",function(t,e,o){i(".index-slider").html(o+1)});var t=i(".slick-one").slick("getSlick").slideCount;i(".all-slider").html(t),i(".slick-two").slick({dots:!1,arrows:!0,slidesToScroll:1,slidesToShow:1,infinite:!0,autoplay:!0,autoplaySpeed:6e3,prevArrow:i(".arrow_prev--2"),nextArrow:i(".arrow_next--2")}),i(".slick-two").on("afterChange",function(t,e,o){i(".index-slider__1").html(o+1)});t=i(".slick-two").slick("getSlick").slideCount;i(".all-slider__1").html(t),i(document).ready(function(){i("form").submit(function(){var t=i(this).attr("id");i("#"+t);return i.ajax({type:"POST",url:"check.php",data:i(this).serialize()}).done(function(){i("#pop_12").trigger("click")}),!1})}),document.getElementById("ajax_forms").onsubmit=function(){if(!grecaptcha.getResponse())return alert("Вы не заполнили поле Я не робот!"),!1};const e=Array.from(document.querySelectorAll("video"));let o=!0;e.forEach(i=>{i.addEventListener("play",function(){o&&e.forEach(i=>{i.pause()}),this.paused?(o=!1,this.play()):o=!0})})})}(jQuery);
+(function ($) {
+	$(document).ready(function () {
+
+		//Popup
+		$('#pop_1').magnificPopup({
+			type: 'inline'
+		});
+		$('#pop_2').magnificPopup({
+			type: 'inline'
+		});
+		$('#pop_3').magnificPopup({
+			type: 'inline'
+		});
+		$('#pop_4').magnificPopup({
+			type: 'inline'
+		});
+		$('#pop_5').magnificPopup({
+			type: 'inline'
+		});
+		$('#pop_6').magnificPopup({
+			type: 'inline'
+		});
+		$('#pop_7').magnificPopup({
+			type: 'inline'
+		});
+		$('#pop_8').magnificPopup({
+			type: 'inline'
+		});
+		$('#pop_9').magnificPopup({
+			type: 'inline'
+		});
+		$('#pop_10').magnificPopup({
+			type: 'inline'
+		});	
+		$('#pop_12').magnificPopup({
+			type: 'inline'
+		});
+		$('.test-popup-link-1').magnificPopup({
+		  type: 'image'
+		});
+		$('.test-popup-link-2').magnificPopup({
+		  type: 'image'
+		});
+		$('.test-popup-link-3').magnificPopup({
+		  type: 'image'
+		});
+		$('.test-popup-link-4').magnificPopup({
+		  type: 'image'
+		});
+		$('#test-popup-img-1').magnificPopup({
+		  type: 'inline'
+		});
+		$('.test-popup-img-2').magnificPopup({
+		  type: 'image'
+		});
+		$('.test-popup-img-3').magnificPopup({
+		  type: 'image'
+		});
+		$(function(){
+			$("a[href^='#shema_raboti']").click(function(){
+				var _href = $(this).attr("href");
+				$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+				return false;
+			});
+			$("a[href^='#stoimost']").click(function(){
+				var _href = $(this).attr("href");
+				$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+				return false;
+			});
+			$("a[href^='#otziv']").click(function(){
+				var _href = $(this).attr("href");
+				$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+				return false;
+			});
+			$("a[href^='#contact']").click(function(){
+				var _href = $(this).attr("href");
+				$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+				return false;
+			});
+			$("a[href^='#services']").click(function(){
+				var _href = $(this).attr("href");
+				$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+				return false;
+			});
+			$("a[href^='#top']").click(function(){
+				var _href = $(this).attr("href");
+				$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+				return false;
+			});
+		});
+		
+		var mySlider_1 = $('.slick-one');
+		mySlider_1.slick({
+			dots: false,
+			arrows: true,
+			slidesToScroll: 1,
+			slidesToShow: 1,
+			infinite: true,
+			autoplay: true,
+  			autoplaySpeed: 10000,
+			prevArrow: $('.arrow_prev--1'),
+			nextArrow: $('.arrow_next--1')
+		});
+		$(".slick-one").on('afterChange', function(event, slick, currentSlide){
+			$(".index-slider").html(currentSlide + 1);
+	   	});
+		var allCurrentSlide = $(".slick-one").slick("getSlick").slideCount
+		$( ".all-slider" ).html(allCurrentSlide);
+
+		var mySlider_2 = $('.slick-two');
+		mySlider_2.slick({
+			dots: false,
+			arrows: true,
+			slidesToScroll: 1,
+			slidesToShow: 1,
+			infinite: true,
+			autoplay: false,
+  			autoplaySpeed: 6000,
+			prevArrow: $('.arrow_prev--2'),
+			nextArrow: $('.arrow_next--2')
+		});
+		$(".slick-two").on('afterChange', function(event, slick, currentSlide){
+			$(".index-slider__1").html(currentSlide + 1);
+	   	});
+		var allCurrentSlide = $(".slick-two").slick("getSlick").slideCount
+		$( ".all-slider__1" ).html(allCurrentSlide);
+
+
+
+		
+
+		$(document).ready(function () {
+	        $('form').submit(function () {
+	            var formID = $(this).attr('id'); // Получение ID формы
+	            var formNm = $('#' + formID);
+	            $.ajax({
+					type: "POST",
+					url: "check.php",
+					data: $(this).serialize()
+				}).done(function() {
+					$('#pop_12').trigger('click');
+				});
+	            return false;
+	        });
+	    });
+	    
+		document.getElementById('ajax_forms').onsubmit = function () {
+		    if (!grecaptcha.getResponse()) {
+		         alert('Вы не заполнили поле Я не робот!');
+		         return false; // возвращаем false и предотвращаем отправку формы
+		    }
+		}
+		/*
+		$( document ).ready(function() {
+		    $("#pop_6").click(
+				function(){
+					sendAjaxForm('result_form', 'ajax_form', 'check.php');
+					return false; 
+				}
+			);
+		});
+		$( document ).ready(function() {
+		    $("#pop_11").click(
+				function(){
+					sendAjaxForm('result_form', 'ajax_forms', 'check.php');
+					return false; 
+				}
+			);
+		});
+		$( document ).ready(function() {
+		    $("#pop_12").click(
+				function(){
+					sendAjaxForm('result_form', 'ajax_formss', 'check.php');
+					return false; 
+				}
+			);
+		});
+		*/
+		const videos = Array.from(document.querySelectorAll('video'));
+		let playing = true;
+
+		videos.forEach(video => {
+		  video.addEventListener('play', function() {
+		    if (playing) {
+		      videos.forEach(el => {
+		        el.pause();
+		      });
+		    }
+		    if (this.paused) {
+		      playing = false;
+		      this.play();
+		    } else {
+		      playing = true;
+		    }
+		  });
+		});
+		/*
+		function sendAjaxForm(result_form, ajax_form, url) {
+		    $.ajax({
+		        url:     "check.php", //url страницы (action_ajax_form.php)
+		        type:     "POST", //метод отправки
+		        dataType: "html", //формат данных
+		        data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
+		        success: function(response) { //Данные отправлены успешно
+		        	result = $.parseJSON(response);
+		        	$('#result_form').html('Имя: '+result.name+'<br>Телефон: '+result.tell+'<br>Почта: '+result.email);
+		    	},
+		    	error: function(response) { // Данные не отправлены
+		            $('#result_form').html('Ошибка. Данные не отправлены.');
+		    	}
+		 	});
+		}
+		function sendAjaxForm(result_form, ajax_formss, url) {
+		    $.ajax({
+		        url:     "check.php", //url страницы (action_ajax_form.php)
+		        type:     "POST", //метод отправки
+		        dataType: "html", //формат данных
+		        data: $("#"+ajax_formss).serialize(),  // Сеарилизуем объект
+		        success: function(response) { //Данные отправлены успешно
+		        	result = $.parseJSON(response);
+		        	$('#result_form').html('Имя: '+result.name+'<br>Телефон: '+result.tell+'<br>Почта: '+result.email);
+		    	},
+		    	error: function(response) { // Данные не отправлены
+		            $('#result_form').html('Ошибка. Данные не отправлены.');
+		    	}
+		 	});
+		}
+		function sendAjaxForm(result_form, ajax_forms, url) {
+		    $.ajax({
+		        url:     "check.php", //url страницы (action_ajax_form.php)
+		        type:     "POST", //метод отправки
+		        dataType: "html", //формат данных
+		        data: $("#"+ajax_forms).serialize(),  // Сеарилизуем объект
+		        success: function(r) {$('#my-popup').removeClass('hidden')},
+		    	error: function(response) { // Данные не отправлены
+		            $('#result_form').html('Ошибка. Данные не отправлены.');
+		    	}
+		 	});
+		}
+		*/
+	});
+})(jQuery);
