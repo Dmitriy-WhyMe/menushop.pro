@@ -248,6 +248,9 @@ footer .flex .social a{
         -webkit-transform-origin: 0 0;
         transform-origin: 0 0;
     }
+    .people img{
+        max-width: 122px;
+    }
 }
 @media (max-width: 409px){
     .acknowledgments .acknowledgments-block{
@@ -272,9 +275,7 @@ footer .flex .social a{
         -webkit-transform-origin: 0 0;
         transform-origin: 0 0;
     }
-    .people img{
-        max-width: 122px;
-    }
+    
     .us .absol {
         position: absolute;
         right: 0;
@@ -294,6 +295,9 @@ footer .flex .social a{
     } 
 }
 @media (max-width: 375px) {
+    .dops-mobile span{
+        text-align: center;
+    }
     .g-recaptcha{
         margin: 0 auto;
         -ms-transform: scale(0.85);
